@@ -1,4 +1,5 @@
-#Сжатие нескольких файлов / папки
+# Сжатие нескольких файлов / папки
+# Пользователь вводит путь в терминале
 import os
 import zipfile
 
@@ -13,5 +14,3 @@ for folder, subfolders, files in os.walk(adres_file_replace):
 		fantasi_zip.write(os.path.join(folder, file), os.path.relpath(os.path.join(folder, file), adres_file_replace), compress_type = zipfile.ZIP_DEFLATED)
 
 fantasi_zip.close()
-
-#C:\Users\1\Desktop\ToDoList
